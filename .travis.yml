@@ -5,3 +5,10 @@ services:
   - postgresql
 before_script:
   - psql -c 'create database rubystart_test;' -U postgres
+deploy:
+  provider: heroku
+  api_key: 
+    secure: "e02cdd69-d551-43f9-b79b-02a468eec08d" 
+  app: ruby-getting-started-hello
+
+
